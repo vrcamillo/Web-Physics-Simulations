@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>Velocidade de uma onda na corda</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="text/javascript" src="common.js"></script>
+		<script type="text/javascript" src="wave.js"></script>
+		<script type="text/javascript" src="velocity.js"></script>
+	</head>
+	
+	<body oncontextmenu="return false">
+		<div id="content">
+			<div id="main">
+				<canvas id="canvas" >HTML5 is not supported.</canvas>
+			</div>
+			<div id="bottom_panel">
+				<div id="controls">
+				<div class="row">
+					<div class="column">
+						<div class="center">
+							<label for="tension_slider">T</label>
+						</div>
+						<input id="tension_slider" type="range" min="0" max="1" value="0" step="0.01" oninput="tension_changed(this.value)" class="slider">
+					</div>
+					<div class="column">
+						<div class="center">
+							<label for="density_slider">μ</label>
+						</div>
+						<input id="density_slider" type="range" min="0" max="1" value="0" step="0.01" oninput="density_changed(this.value)" class="slider">
+					</div>
+				</div>
+				<input id="pulse_button" type="button" value="Pulso" onclick="wave.pulse()">
+				</div>
+			</div>
+		</div>
+		<input type="button" id="fullscreen_button" onclick="toggle_fullscreen()" value="Tela cheia">
+	</body>
+</html>
