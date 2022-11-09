@@ -1,0 +1,48 @@
+body {
+	overflow: hidden;
+}
+
+p, label, input[type=button] {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+
+.header {
+	padding: 0px 20px 0px 20px;
+}
+
+input[type=range] {
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.control {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.column {
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items: center;
+	
+	width: 100%;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}

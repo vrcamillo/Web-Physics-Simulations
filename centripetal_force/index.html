@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Força centrípeta e movimento circular</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>		
+		<div class="header">
+			<p class="text">Sobre o corpo representado como uma bolinha branca abaixo age uma força de módulo constante que sempre aponta para a origem (força centrípeta).</p>
+			
+			<p>Observe as diferentes trajetórias de um objeto em função da força centrípeta (F), e das características desse corpo como massa (m), velocidade inicial (v) e distância até a origem inicial (r). </p>
+		</div>
+		
+		<div class="row center">
+			<canvas id="simulation-canvas" width="400" height="400">HTML5 não é suportado pelo seu navegador. Use um navegador mais recente.</canvas>
+			
+			<div class="column">
+				<div class="control column">
+					<label id="force-label" for="force-slider">F = </label>
+					<input type="range" id="force-slider"  min="0" max="25.0" step="0.001" value="4">
+				</div>
+				
+				<div class="control column">
+					<label id="mass-label" for="mass-slider">m = </label>
+					<input type="range" id="mass-slider" min="1.0" max="5.0"  step="0.01" value="2">
+				</div>
+				
+				<div class="control column">
+					<label id="speed-label" for="speed-slider">v = </label>
+					<input type="range" id="speed-slider" min="1.0" max="5.0"  step="0.01" value="2">
+				</div>					
+				
+				<div class="control column">
+					<label id="radius-label" for="radius-slider">r = </label>
+					<input type="range" id="radius-slider" min="1.0" max="5.0"  step="0.01" value="2.0">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
