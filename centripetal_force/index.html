@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Força centrípeta e movimento circular</title>
+		<title lang="pt">Força centrípeta e movimento circular</title>
+		<title lang="en">Centripetal force and circular motion</title>
+		
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
+		<script src="..\language_change.js"></script>
+		<script>window.addEventListener("load", () => set_language("en"))</script>
 	</head>
 	<body>		
 		<div class="header">
-			<p class="text">Sobre o corpo representado como uma bolinha branca abaixo age uma força de módulo constante que sempre aponta para a origem (força centrípeta).</p>
+			<p class="text" lang="pt">Sobre o corpo representado como uma bolinha branca abaixo age uma força de módulo constante que sempre aponta para a origem (força centrípeta).</p>
+			<p class="text" lang="en">The white dot below represents a particle, upon which acts a force of constant magnitude that always points to the origin (centripetal force).</p>
 			
-			<p>Observe as diferentes trajetórias de um objeto em função da força centrípeta (F), e das características desse corpo como massa (m), velocidade inicial (v) e distância até a origem inicial (r). </p>
+			<p class="text" lang="pt">Observe as diferentes trajetórias de um objeto em função da força centrípeta (F), e das características desse corpo como massa (m), velocidade inicial (v) e distância inicial até a origem (r).</p>
+			<p class="text" lang="en">Observe the different trajectories it traces as a function of the centripetal force (F), and the characteristics of this body, such as mass (m), initial velocity (v), and initial distance to the origin (r).</p>
 		</div>
 		
 		<div class="row center">
-			<canvas id="simulation-canvas" width="400" height="400">HTML5 não é suportado pelo seu navegador. Use um navegador mais recente.</canvas>
+			<canvas id="simulation-canvas" width="400" height="400">
+				<p lang="pt">HTML5 não é suportado pelo seu navegador.</p>
+				<p lang="en">HTML5 is not supported by your browser.</p>
+			</canvas>
 			
 			<div class="column">
 				<div class="control column">

@@ -4,12 +4,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<title>Velocidade de uma onda em relação à profundidade</title>
+		<title lang="en">Wave velocity as a function of depth</title>
+		<title lang="pt">Velocidade de uma onda em relação à profundidade</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 
 		<script type="text/javascript" src="common.js"></script>
 		<script type="text/javascript" src="wave.js"></script>
 		<script type="text/javascript" src="water.js"></script>
+		
+		<script src="..\language_change.js"></script>
+		<script>window.addEventListener("load", () => set_language("en"))</script>
+		
 	</head>
 	
 	<body oncontextmenu="return false">
@@ -21,18 +26,21 @@
 				<div class="row">
 					<div class="column">
 					<div class="center">
-						<label for="depth_slider">Profundidade</label>
+						<label for="depth_slider" lang="en">Depth</label>
+						<label for="depth_slider" lang="pt">Profundidade</label>
 					</div>
 					<input id="depth_slider" type="range" min="0" max="1" value="0" step="0.01" oninput="depth_changed(this.value)" class="slider">
 
 					</div>
 					<div class="column">
-					<input id="pulse_button" type="button" value="Pulso" onclick="wave.pulse()">
+					<input id="pulse_button" type="button" value="Pulso" onclick="wave.pulse()" lang="pt">
+					<input id="pulse_button" type="button" value="Pulse" onclick="wave.pulse()" lang="en">
 
 					</div>
 				</div>
 			</div>
 		</div>
-		<input type="button" id="fullscreen_button" onclick="toggle_fullscreen()" value="Tela cheia">
+		<input type="button" id="fullscreen_button" onclick="toggle_fullscreen()" value="Fullscreen" lang="en">
+		<input type="button" id="fullscreen_button" onclick="toggle_fullscreen()" value="Tela cheia" lang="pt">
 	</body>
 </html>
